@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoLitech</title>
+    <link rel="stylesheet" href="css/membership.css">
+</head>
+<body>
+    
+    <div class="navibar">
+        <div class="navbuttonhome"><a href="homepage.html" class="navbuttonhome"><img src="images/homeicon.png"></a></div>
+        <div class="navbuttonshop"><a href="ourproducts.html" class="navbuttonshop"><img src="images/shopbag.png"></a></div>
+        <div class="navibrandalt">Membership</div>
+        <div class="navbuttonloc"><a href="ourstores.html" class="navbuttonloc"><img src="images/loc.png"></a></div>
+        <div class="navbuttonprof"><a href="membership.html" class="navbuttonprof"><img src="images/prof.png"></a></div>
+    </div>
+    <div class="formcontainer">
+            <p id="title">Membership Registration Form</p><br>
+        <div class="forminnercontainer">
+            
+            <div class="forminnercontainer2">
+            <script src="./javascript/formscript.js"></script>    
+            <form id="form" action="" onsubmit="validate(event)" method="post">
+                <label class="formlabel" for="name">Name</label>
+                <br>    
+                <input type="text" class="formbox" name="name" id="name">
+                <br>
+                <label class="formlabel" for="email">E-mail</label>
+                <br>
+                <input type="email" class="formbox" name="email" id="email">
+                <br>
+                <label class="formlabel" for="tel">Phone Number</label>
+                <br>
+                <input type="tel" class="formbox" name="tel" id="tel">
+                <br>
+                <label class="formlabel" for="password">Password</label>
+                <br>
+                <input type="password" class="formbox" name="password" id="password">
+                <br>
+                <label class="formlabel" for="confirmPassword">Confirm Password</label>
+                <br>
+                <input type="password" class="formbox" name="confirmPassword" id="confirmPassword">
+                <br>
+                <label class="formlabel" for="age">Age</label>
+                <br>
+                <input type="number" class="formbox" name="age" id="age" min="1" max="150">
+                <br>
+                <label class="formlabel" for="address">Address</label>
+                <br>
+                <textarea name="address" class="addressbox" id="address"></textarea>
+                <br>
+                <label class="formlabel" for="gender">Gender</label>
+                <br>
+                <input type="radio" name="gender" id="maleRadio">
+                <label class="formlabel" for="gender">Male</label>
+                <br>
+                <input type="radio" name="gender" id="femaleRadio">
+                <label class="formlabel" for="gender">Female</label>
+                <br>
+                <br>
+                <label class="formlabel" for="region">Region</label>
+                <br>
+                <select name="region" id="region" class="formlabel">
+                    <option value="">
+                        Choose a region
+                    </option>
+                    <option value="america">
+                        America
+                    </option>
+                    <option value="asia">
+                        Asia
+                    </option>
+                    <option value="australia">
+                        Australia
+                    </option>
+                    <option value="europe">
+                        Europe
+                    </option>
+                    
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="term">I agree to terms & conditions</label>
+            <br>
+            <p id="error"></p>
+                <div class="submitcontainer">
+                    <input type="submit" class="submit" value="Submit">
+                </div>
+                
+            
+            </form>
+            </div>
+            
+        </div>
+    </div>
+    <div class="bottombar">
+        <div class="ig"><a href="https://www.instagram.com/"><img src="./images/ig.png"></a></div>
+        <div class="fb"><a href="https://www.facebook.com/"><img src="./images/fb.png"></a></div>
+        <div class="yt"><a href="https://www.youtube.com/"><img src="./images/yt.png"></a></div>
+        <a href="aboutus.html" class="abtus">About Us</a>
+    </div>
+
+</body>
+</html>
